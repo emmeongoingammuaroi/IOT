@@ -29,6 +29,7 @@ python manage.py makemigrations users
 python manage.py makemigrations services
 python manage.py migrate
 ```
+Before following the next step, please read notes at server/README.MD
 
 Run server with local:
 
@@ -44,8 +45,11 @@ Open with Chrome or FireFox : **127.0.0.1:8000**
 Install node packages:
 
 ```bash
+cd frontend
 npm install
 ```
+
+Before following the next step, please read notes at frontend/README.MD
 
 Run Vue with local:
 

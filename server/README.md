@@ -1,31 +1,7 @@
-### Boot server
+# Notes
 
-Active a python virtual environment:
+There are some notes you need to notice:
 
-```bash
-cd server
-virtualenv -p /usr/bin/python3 env
-source env/bin/activate
-```
+1. You have to change the '.env.example' filename to '.env'
 
-Install requirements:
-
-```bash
-pip install -r requirements.txt
-```
-
-Initialize database:
-
-```bash
-python manage.py makemigrations users
-python manage.py makemigrations services
-python manage.py migrate
-```
-
-Run server with local:
-
-```bash
-python manage.py runserver --noreload
-```
-
-Open with Chrome or FireFox : **127.0.0.1:8000**
+2. You need to change all value in services/constants.py file with the right value for u 

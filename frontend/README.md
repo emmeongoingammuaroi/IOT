@@ -1,16 +1,5 @@
-# Boot Vue frontend
+# Notes
 
-Install node packages:
+There are some notes you need to notice:
 
-```bash
-cd frontend
-npm install
-```
-
-Run Vue with local:
-
-```bash
-npm run dev
-```
-
-Open with Chrome or FireFox : **localhost:8080**
+1. You have to change the value of apiUrl variable with the right url for u
