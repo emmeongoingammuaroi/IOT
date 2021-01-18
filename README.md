@@ -1,0 +1,56 @@
+# IOT smart home
+
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/Nukukoricchio/IOT
+```
+
+## 1. Boot server
+
+Active a python virtual environment:
+
+```bash
+cd server
+virtualenv -p /usr/bin/python3 env
+source env/bin/activate
+```
+
+Install requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
+Initialize database:
+
+```bash
+python manage.py makemigrations users
+python manage.py makemigrations services
+python manage.py migrate
+```
+
+Run server with local:
+
+```bash
+python manage.py runserver --noreload
+```
+
+Open with Chrome or FireFox : **127.0.0.1:8000**
+
+
+## 2. Boot Vue frontend
+
+Install node packages:
+
+```bash
+npm install
+```
+
+Run Vue with local:
+
+```bash
+npm run dev
+```
+
+Open with Chrome or FireFox : **localhost:8080**
